@@ -4,8 +4,8 @@ This script requires essentialmode and pNotify.
 
 ----------------------------------------------------------------------
 
-This script has no longer requires essentialmode. This has been made compatible for DRP Core by Sevres986/Inferno.
+This script has no longer requires essentialmode.
 
-The script hasn't been tested. There might be some bugs ( This is unlikely ).
+The script hasn't been tested. There might be some bugs.
 
 Script requires pNotify and Mythic Notify along with DRP Core.
