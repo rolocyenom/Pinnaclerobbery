@@ -529,12 +529,11 @@ end)
 
 RegisterServerEvent("robberies:robberyOver")
 AddEventHandler("robberies:robberyOver", function(name)
-	local src = source
-	local character = exports["drp_id"]:GetCharacterData(src)
-	TriggerEvent("DRP_Bank:AddCashMoney", src, character, robbableSpots[name].currentMoney)
-	TriggerClientEvent("DRP_Core:Info", source, "TESTING:MONEY", tostring(robbableSpots[name].currentMoney), 5000, true, "leftCenter")
-	robbableSpots[name].currentMoney=0
-end) 
+    local src = source
+    local character = exports["drp_id"]:GetCharacterData(src)
+	TriggerEvent("DRP_Bank:AddDirtyMoney", character, robbableSpots[name].currentMoney)
+	TriggerClientEvent("DRP_Core:Info", src, "TESTING:MONEY", tostring(robbableSpots[name].currentMoney), 5000, true, "leftCenter")
+end)
 
 RegisterServerEvent("robberies:robberyOverNotification")
 AddEventHandler("robberies:robberyOverNotification", function(name)
